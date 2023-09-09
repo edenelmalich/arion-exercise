@@ -24,6 +24,14 @@ const InputDatePicker: FC<TInputDatePicker> = ({
         open={open}
         format="MMMM Do YYYY"
         onClose={() => setOpen(false)}
+        sx={{
+          '& .MuiInputBase-input': {
+            color: 'white',
+          },
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: 'white',
+          },
+        }}
         slotProps={{
           textField: {
             onClick: () => setOpen(true),
